@@ -1,1 +1,4 @@
 # Proyecto-Final-Silva_Martin
+PANEL ADMINISTRADOR
+SUPERUSUARIO: admin
+CONTRASNIA: 123
