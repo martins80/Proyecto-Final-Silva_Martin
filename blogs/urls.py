@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from blogs import views
 
@@ -11,4 +11,8 @@ urlpatterns = [
     path('featured/', views.FeaturedListView.as_view(), name='featured'),
     path('category/<slug:slug>', views.CategoryListView.as_view(), name='category'),
     path('search/', views.SearchResultsView.as_view(), name='search'),
+    path('about/',views.about, name='about'),
+    
+    
+    
 ]

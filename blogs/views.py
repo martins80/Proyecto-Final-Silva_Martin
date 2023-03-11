@@ -27,6 +27,9 @@ def home_page(request):
 
     return render(request, 'blogs/home_page.html', context=context)
 
+def about(request):
+    return render(request, 'blogs/about.html')
+
 
 class PostDetailView(generic.DetailView):
     model = Post
@@ -117,3 +120,4 @@ class SearchResultsView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['query'] = self.request.GET.get('search')
         return context
+
